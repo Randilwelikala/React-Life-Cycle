@@ -1,9 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import { Component } from 'react';
+import Student from './Student';
 
-function App() {
-  return (
-    <div className="App">
+class App extends Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      name:"Ruwan",
+      age:25
+    }
+  }
+
+  render(){
+    return(
+      <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -17,9 +28,16 @@ function App() {
         >
           Learn React
         </a>
+        <Student name ={this.state.name} age={this.state.age}/>
       </header>
     </div>
-  );
+
+
+    );
+  }
+
 }
+
+
 
 export default App;
