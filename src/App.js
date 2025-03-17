@@ -8,9 +8,11 @@ class App extends Component{
     super(props);
     this.state = {
       name:"Ruwan",
-      age:25
+      age:20
     }
   }
+
+  
 
   render(){
     return(
