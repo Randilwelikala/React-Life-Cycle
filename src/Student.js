@@ -17,6 +17,10 @@ class Student extends Component{
             
     }
 
+    componentDidMount(){
+        console.log('ComponentDidMount');
+    }
+
     
     
 
