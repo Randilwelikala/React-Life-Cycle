@@ -42,6 +42,10 @@ class Student extends Component{
         return null;
     }
 
+    componentDidUpdate(prevProps,PrevState,snapshot){
+        console.log('componentDidUpdate');
+    }
+
     
     
 
