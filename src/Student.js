@@ -37,6 +37,11 @@ class Student extends Component{
         }
     }
 
+    getSnapshotBeforeUpdate(prevProps,PrevState){
+        console.log('getSnapshotBeforeUpdate');
+        return null;
+    }
+
     
     
 
