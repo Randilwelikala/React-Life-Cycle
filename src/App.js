@@ -13,6 +13,10 @@ class App extends Component{
     }
   }
 
+  onSearch = (event)=>{
+    this.setState({name:event.target.value});
+  }
+
   
 
   render(){
@@ -20,7 +24,7 @@ class App extends Component{
       <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Search></Search>
+        <Search onSearch={this.onSearch}></Search>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

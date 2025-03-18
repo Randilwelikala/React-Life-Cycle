@@ -29,7 +29,12 @@ class Student extends Component{
 
     shouldComponentUpdate(nextProps,nextState){
         console.log('shouldComponentUpdate');
-        return true;
+        // return true;
+        if(nextProps.name.length > 3){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     

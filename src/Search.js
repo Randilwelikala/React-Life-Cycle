@@ -9,6 +9,7 @@ class Search extends Component{
 
     onSearch = (event)=> {
         this.setState({text:event.target.value});
+        this.props.onSearch(event);
     }
 
     render(){
