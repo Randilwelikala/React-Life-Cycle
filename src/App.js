@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
 import Student from './Student';
+import Search from './Search';
 
 class App extends Component{
   constructor(props){
@@ -19,6 +20,7 @@ class App extends Component{
       <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Search></Search>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
