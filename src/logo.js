@@ -11,7 +11,7 @@ class Logo extends Component{
 
         return(
             <>
-            <img src={logo} className = "App-logo" alt ="logo-2"/>
+            <img src={logo} style={{animationDuration:`${this.props.animationDuration}s`}} className = "App-logo" alt ="logo-2"/>
 
             </>           
             

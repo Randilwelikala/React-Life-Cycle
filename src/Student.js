@@ -6,7 +6,7 @@ import Logo from './logo';
 class Student extends Component{
     constructor(props){
         super(props);
-        this.state = {year:0,color:"black"};
+        this.state = {year:0,color:"black", speed:0.1555555555};
     }
 
     static getDerivedStateFromProps(nextProps, PrevState){
@@ -58,7 +58,7 @@ class Student extends Component{
         
         return(
             <div style = {{backgroundColor:this.state.color}}>
-                <Logo/>
+                <Logo animationDuration={this.state.speed}/>
                 <h2>Name - {this.props.name}</h2>
                 <h2>Age - {this.props.age}</h2>
                 <h2>Year - {this.state.Year}</h2>
