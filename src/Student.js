@@ -7,6 +7,7 @@ class Student extends Component{
     }
 
     static getDerivedStateFromProps(nextProps, PrevState){
+        console.log('getDerivedStateFromProps');
         const newYear = new Date().getFullYear() - nextProps.age;
         console.log(newYear);
         if(newYear === PrevState.Year){
