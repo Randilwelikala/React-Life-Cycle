@@ -39,11 +39,13 @@ class Student extends Component{
 
     getSnapshotBeforeUpdate(prevProps,PrevState){
         console.log('getSnapshotBeforeUpdate');
-        return null;
+        return prevProps.name;
     }
 
     componentDidUpdate(prevProps,PrevState,snapshot){
         console.log('componentDidUpdate');
+        console.log(snapshot);
+
     }
 
     
