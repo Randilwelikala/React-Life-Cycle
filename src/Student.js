@@ -3,7 +3,7 @@ import { Component } from "react";
 class Student extends Component{
     constructor(props){
         super(props);
-        this.state = {year:0};
+        this.state = {year:0,color:"black"};
     }
 
     static getDerivedStateFromProps(nextProps, PrevState){
@@ -20,6 +20,11 @@ class Student extends Component{
 
     componentDidMount(){
         console.log('ComponentDidMount');
+        setTimeout(()=>{
+            this.setState({color:'red'});
+
+        },1000);
+        
     }
 
     
@@ -28,7 +33,7 @@ class Student extends Component{
     render(){
         
         return(
-            <div>
+            <div style = {{backgroundColor:this.state.color}}>
                 <h2>Name - {this.props.name}</h2>
                 <h2>Age - {this.props.age}</h2>
                 <h2>Year - {this.state.Year}</h2>
