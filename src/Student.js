@@ -27,6 +27,11 @@ class Student extends Component{
         
     }
 
+    shouldComponentUpdate(nextProps,nextState){
+        console.log('shouldComponentUpdate');
+        return true;
+    }
+
     
     
 
