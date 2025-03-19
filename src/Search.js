@@ -16,6 +16,7 @@ class Search extends Component{
         return(
             <div>
                 <input type="text"onChange={this.onSearch}></input>
+                <br/>
                 <input type="text"onChange={this.onSearch}></input>
                 <p>You Typed - {this.state.text}</p>
             </div>
